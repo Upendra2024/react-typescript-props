@@ -7,6 +7,7 @@ import {Status} from './Status'
 import {Header} from './Header';
 import {Oscar} from './Oscar';
 import { Button } from './Eventprops';
+import { InputEvent} from './Input';
 
 
 export default function App() {
@@ -45,6 +46,9 @@ export default function App() {
      </Oscar>
      <Button handleClick = { (event ,id) =>{
        console.log("button clicked",event,id)
+     }}/>
+     <InputEvent value = '' handleChange ={ (event) =>{
+   console.log(event)
      }}/>
     </div>
 
