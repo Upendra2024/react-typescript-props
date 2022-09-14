@@ -5,11 +5,24 @@ type GreetProps = {
   isloggiedIn:boolean
 };
 
-export const Greet = (props: GreetProps) => {
+// export const Greet = (props: GreetProps) => {
+//   return (
+//     <div>
+//       <h5>{
+//       props.isloggiedIn ? `Hello ${props.name} welcome to stakblitz ${props.messageCount} times` : `Welcome guest `
+//       }
+//       </h5>
+//     </div>
+//   );
+// };
+  
+//props destructuring 
+
+export const Greet = ({name , messageCount,isloggiedIn }: GreetProps) => {
   return (
     <div>
       <h5>{
-      props.isloggiedIn ? `Hello ${props.name} welcome to stakblitz ${props.messageCount} times` : `Welcome guest `
+      isloggiedIn ? `Hello ${name} welcome to stakblitz ${messageCount} times` : `Welcome guest `
       }
       </h5>
     </div>

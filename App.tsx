@@ -8,6 +8,7 @@ import {Header} from './Header';
 import {Oscar} from './Oscar';
 import { Button } from './Eventprops';
 import { InputEvent} from './Input';
+import {StyleComp} from './StyleProps';
 
 
 export default function App() {
@@ -50,6 +51,7 @@ export default function App() {
      <InputEvent value = '' handleChange ={ (event) =>{
    console.log(event)
      }}/>
+     <StyleComp style ={ {color:'red' , border : '5px solid green' ,padding : '1rem' ,width:'300px'}}/>
     </div>
 
   );
